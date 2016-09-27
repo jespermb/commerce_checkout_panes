@@ -1,0 +1,8 @@
+commerce_checkout_panes_configuration:
+  js:
+    js/commerce_checkout_panes_configuration.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings

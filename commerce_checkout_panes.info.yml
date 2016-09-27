@@ -1,0 +1,5 @@
+name: Commerce checkout panes
+type: module
+description: This provides a set of commonly used checkout panes for commerce.
+core: 8.x
+package: Commerce extra

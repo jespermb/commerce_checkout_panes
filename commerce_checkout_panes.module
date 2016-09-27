@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains commerce_checkout_panes.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function commerce_checkout_panes_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the commerce_checkout_panes module.
+    case 'help.page.commerce_checkout_panes':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This provides a set of commonly used checkout panes for commerce.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
