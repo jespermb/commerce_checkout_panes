@@ -61,12 +61,8 @@ class BaseOrderDisplay extends CheckoutPaneBase implements CheckoutPaneInterface
     ];
     $default_display = $this->configuration['views_display'];
     $pane_id = $this->getId();
-    ksm($pane_id);
     foreach ($view_options as $view_name => $view_label) {
       $display_options = $this->getViewDisplayOptions($view_name);
-      $default = (strpos($default_display, $view_name) === 0) ?
-        str_replace($default_display, $view . '_', '') :
-        current($display_options);
       $form['views_display_' . $view_name] = [
         '#type' => 'select',
         '#title' => $this->t('Select display'),
