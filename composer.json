@@ -1,11 +1,9 @@
 {
     "name": "drupal/commerce_checkout_panes",
     "description": "This module provides new checkout panes for drupal commerce 2.x",
-    "authors": [
-        {
-            "name": "jesperjb",
-            "email": "jesper@adapt.dk"
-        }
-    ],
-    "require": {}
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/core": "~8.2",
+    }
 }
